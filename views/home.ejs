@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>VDuo</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="icon.ico">
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.display = "block";
+        }
+          
+          function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Help</a>
+        <a href="main">Our Product</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button>
+    </div>
+    <div class="open">
+        <div class="ut">
+            <div class="abc" id="pqr">
+                <!-- <div class="menu-toggle" onclick="toggleMenu()">
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                    <span class="menu-bar"></span>
+                </div> -->
+                <div class="logo"><a href="#">VDuo</a></div>
+            </div>
+            <div class="middle-div">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="main">Our Product</a></li>
+                </ul>
+            </div>
+            <div class="sign-up">
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn">
+                    <div class="app">
+                        Login
+                    </div>
+                    <div class="apq">
+                        <img class="sign-up_img" src="sign-up_img.png" alt="img">
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="text"></div>
+        <div class="img"></div>
+    </div>
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="">
+          <div class="container">
+            <h1>Login</h1>
+            
+            <hr>
+            <label for="email"><b>Email/User-Id</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+      
+      
+            <div class="clearfix">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <button type="submit" class="signupbtn">Login</button>
+            </div>
+            <div class="sign-up-page">
+                <p>Don't have an account? <a href="signup">Sign Up</a></p>
+            </div>
+          </div>
+        </form>
+    </div>
+    <hr>
+    <div class="middle-part">
+        <div class="text-part">
+            <h1>PRODUCTION READY VIDEOS FROM TEXT INPUT</h1>
+            <hr class="second-hr">
+            <div class="lower-text">
+                <div class="lower-1">
+                    <p>OUR SOLUTIONS</p>
+                </div>
+                <div class="lower-2">
+                    <p>WE PROVIDE THE FULL FUNNEL APPROACH</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="image-main">
+            <img src="image-main.png" alt="image">
+                <div class="try-out-btn">
+                     <a href="main">
+                        <button class="try-out-button">
+                            <div class="try-out-button-text">
+                                TRY OUT YOURSELF
+                            </div>
+                            <div class="try-out-button-img">
+                                <img class="btn-img" src="sign-up_img.png" alt="img">
+                            </div>
+                    </div>
+                        </button>
+                    </a>
+                </div>
+                    </button>
+        </div>
+    </div>
+    <div class="lower-part">
+        <div class="part-I">
+            <div >
+                <img class="sign-up_img" src="White Play button Png.png" alt="img">
+            </div>
+            <div class="lower-text-part-i">
+                Lets see how we did it
+            </div>
+        </div>
+        <div class="part-II">
+            <p>www.reallygreatsite.com</p>
+        </div>
+        <div class="part-III">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+    </script>
+</body>
+</html>

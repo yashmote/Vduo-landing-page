@@ -1,0 +1,610 @@
+body{
+    background-image: linear-gradient(to right, black, grey);
+    height: 100%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.open{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ut{
+    height: 70px;
+    width: 100%;
+    display: flex;  
+    align-items: center;
+    padding-left: 15px;
+}
+.logo{
+    font-size: 2rem;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.sign-up{
+	transition: all .2s ease-in-out;
+}
+.sign-up:active {
+	transform: scale(1.1);
+	transition: .1s;
+}
+a{
+    color: white;
+    text-decoration:none;
+    display: flex;
+}
+.sign-up_img{
+    height: 68px;
+    width: auto;
+}
+.sign-up {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+.middle-div {
+    width: calc(80% - 30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: inherit;
+    margin-left: 5px;
+}
+.app,.apq{
+    display: flex;
+    align-items: center;}
+hr{
+    width: 100%;
+    height: 1.5px;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.text-part{
+    width:42%;
+    margin-right: 10px;
+}
+.middle-part{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.image-main{
+    width: 58%;
+    margin-left: 10px;
+    margin-right: 0px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.image-main img{
+    width: 100%;
+
+}
+h1{
+    font-size: 3.1rem;
+    font-weight: normal;
+}
+.second-hr{
+    margin-top: 160px;
+}
+.lower-text{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.lower-2,.lower-1{
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.lower-part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top:35px ;
+    justify-content: space-between;
+}
+.part-I{
+    width: 25%;
+    text-align: left;
+    font-size: 1.2rem;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.part-II{
+    width: 30%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.part-III{
+    width: 18%;
+    text-align: right;
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+.lower-text-part-i{
+    margin-left: 10px;
+}
+p{
+    font-size: 1rem;    
+}
+
+.try-out-button {
+    position: absolute;
+    bottom: 40px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 12%;
+    background-color: transparent;
+    color: black; 
+    border: 4px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.try-out-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+.try-out-button-text{
+    margin-left: 15px;
+    width: 40%;
+}
+.try-out-button-img{
+    margin-right: 15px;
+}
+.btn-img{
+    height: 50px;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    /* transition: opacity 0.3s ease-in-out; */
+}
+
+.middle-div.show-menu .nav-links {
+    opacity: 1;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.abc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar{
+    display: none;
+}
+#main{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        
+        font-size: 14px; 
+    }
+    .middle-part{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .text-part{
+        width: 100%;
+        margin-right: 0px;
+    }
+    .image-main{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+    .second-hr{
+        margin-top: 20px;
+    }
+    .lower-part{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top:35px ;
+        
+    }
+    .part-I{
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10%;
+    }
+    .lower-text-part-i{
+        margin-left: 10px;
+    }
+    .part-II{
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .part-III{
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+        margin: 0px 0px 0px 0px;
+    }
+    .sign-up_img{
+        height: 38px;
+        width: auto;
+    }
+    .nav-links a {
+        font-size: 1rem;
+    }
+    .middle-div {
+        width: 0px;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: inherit;
+        padding: 0px 0px 0px 0px ;
+        margin:0px 0px 0px 0px; ;
+    }
+    .logo{
+        font-size: 1.6rem;
+        margin-right: 0px;
+        
+    }
+    .sign-up {
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        margin-left: 40%;
+    }
+    .btn-img{
+        height: 30px;
+    }
+    .try-out-button-text{
+        margin-left: 15px;
+        width: 40%;
+        font-size: 0.6rem;
+    }
+    .ut{
+        height: 70px;
+        width: 100%;
+        display: flex;  
+        align-items: center;
+        margin-right: 7%;
+        margin-right: 4%;
+        justify-content: space-evenly;
+
+    }
+    .try-out-button {
+        position: absolute;
+        bottom: 40px; 
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        height: 12%;
+        background-color: transparent;
+        color: black; 
+        border: 2px solid black;
+        border-radius: 30px;
+        cursor: pointer;
+        text-align: left;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    h1{
+        font-size: 2.5rem;
+        font-weight: normal;
+    }
+    .sidebar {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    
+    .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .sidebar a:hover {
+        color: #f1f1f1;
+    }
+    
+    .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+    }
+    
+    .openbtn:hover {
+        background-color: #444;
+    }
+    
+    #main {
+        display: block;
+        transition: margin-left .5s;
+        padding: 0px;
+    }
+    .menu-toggle{
+        display: none;
+    }   
+}
+
+
+/* Animations */
+
+
+.open .abc {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInFromBottom 1s ease-out forwards;
+}
+
+.open .sign-up {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInFromBottom 1s ease-out forwards 0.5s;
+}
+
+.open .text, .open .img {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInFromBottom 1s ease-out forwards 1s;
+}
+.middle-part h1,
+.middle-part .lower-1,
+.middle-part .lower-2,
+.middle-part .try-out-button-text,
+.nav-links,
+.lower-part .part-I,
+.lower-part .part-II,
+.lower-part .part-III {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInFromBottom 1.5s ease-out forwards;
+}
+.middle-part h1 {
+    animation-delay: 0.5s;
+}
+
+.middle-part .lower-1 {
+    animation-delay: 0.6s;
+}
+
+.middle-part .lower-2 {
+    animation-delay: 0.8s;
+}
+
+.lower-part .part-I {
+    animation-delay: 1s;
+}
+
+.lower-part .part-II {
+    animation-delay: 1.2s;
+}
+
+.lower-part .part-III {
+    animation-delay: 1.5s;
+}
+@keyframes fadeInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn{
+    background-color: transparent;
+   display: flex;
+   border: none;
+   box-shadow: none;
+   justify-content: center;
+   align-items: center;
+    cursor: pointer;
+    color: white;
+    font-size: 1.4rem;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px 0 15px 5px;
+    /* margin: 5px 0 22px 0; */
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+  
+  /* Add a background color when the inputs get focus */
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for all buttons */
+  .btn {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity:1;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+  }
+  
+  /* Float cancel and signup buttons and add an equal width */
+  .cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+
+  }
+  
+  /* Add padding to container elements */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /*Stay in place*/
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: none; /* Enable scroll if needed */
+    padding-top: 50px;
+    color: black;
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* Style the horizontal ruler */
+  .modal hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+   
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .clearfix{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+  }
+  
+.sign-up-page a{
+    color:dodgerblue;
+    font-size:1rem ;
+}

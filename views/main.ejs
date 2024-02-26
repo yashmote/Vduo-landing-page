@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlphEd</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <div class="main">
+        <div class="inner">
+            <div class="container">
+                <div class="box">
+                    <img src="kisspng-vector-graphics-book-stock-illustration-logo-research-vector-book-transparent-amp-png-clipart-5cce8c440022e9.3914588515570401960006.png" alt="">
+                    <h1>AlphEd</h1>
+                </div>
+                <div class="box">
+                    <p>Your one-step solution to educational animations✨</p>
+                </div>
+                <div class="qw box">
+                    <p>Write your animation idea here. Use simple words</p>
+                </div>
+                <div class="input">
+                    <form action="" id="myForm">
+                        <div class="textarea-container">
+                            <textarea id="text" rows="6" cols="100" oninput="updateCharCounter()" onkeypress="checkEnter(event)" maxlength="2450"></textarea>
+                            <span class="char-counter" id="charCounter">0/5000 characters</span>
+                        </div>
+                        <div class="box">
+                            <input type="submit" value="💻 Animate✨">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function updateCharCounter() {
+            var textarea = document.getElementById('text');
+            var charCounter = document.getElementById('charCounter');
+            var charCount = textarea.value.length;
+            charCounter.textContent = "Press Enter to apply · "+charCount + '/24500';
+        }
+
+        function checkEnter(event) {
+            if (event.key === 'Enter' && !event.shiftKey) {
+                event.preventDefault();
+                document.getElementById('myForm').submit();
+            }
+        }
+    </script>
+</body>
+</html>
